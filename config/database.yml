@@ -1,0 +1,21 @@
+development:
+  adapter: postgresql
+  host: localhost
+  database: db/development
+
+  username: postgres
+  password: Handcodb
+
+test:
+  adapter: postgresql
+  database: something_test
+  pool: 5
+  timeout: 5000
+
+production:
+  adapter: postgresql
+  host: localhost
+  
+ 
+  database: db/production
+
