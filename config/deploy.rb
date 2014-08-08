@@ -1,7 +1,7 @@
 lock '3.1.0'
 
 set :application, 'HandCo-op'
-set :repo_url, 'git@github.com/Zachybear/HandCo-op.git'
+set :repo_url, 'git@github.com:Zachybear/HandCo-op.git'
 
 set :deploy_to, '/home/deploy/HandCo-op'
 
