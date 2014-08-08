@@ -15,7 +15,7 @@ test:
 production:
   adapter: postgresql
   host: localhost
-  username: postgres
-  password: Handcodb
- 
+  username: handcodb
+  password: fdqvf4j9nm96jbs
+
   database: db/production
