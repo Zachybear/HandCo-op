@@ -1,11 +1,10 @@
 development:
   adapter: postgresql
   host: localhost
-  database: db/development
-
+  database: handcoop_development
   username: postgres
   password: Handcodb
-
+  pool:     5
 test:
   adapter: postgresql
   database: something_test
@@ -17,5 +16,5 @@ production:
   host: localhost
   username: handcodb
   password: fdqvf4j9nm96jbs
-
-  database: db/production
+  pool:     5
+  database: handcoop_production
