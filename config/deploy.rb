@@ -5,7 +5,7 @@ set :repo_url, 'git@github.com:Zachybear/HandCo-op.git'
 
 set :deploy_to, '/home/deploy/HandCo-op'
 
-set :linked_files, %w{config/database.yml}
+#set :linked_files, %w{config/database.yml}
 set :linked_dirs, %w{bin log tmp/pids tmp/cache tmp/sockets vendor/bundle public/system}
 
 #set :rvm_ruby 2.1.2, :deploy
