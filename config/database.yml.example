@@ -15,6 +15,6 @@ production:
   adapter: postgresql
   host: localhost
   username: handcodb
-  password: fdqvf4j9nm96jbs
+  password: 
   pool:     5
   database: handcoop_production
