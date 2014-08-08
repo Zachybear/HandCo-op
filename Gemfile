@@ -5,6 +5,7 @@ group :development do
   gem 'capistrano-bundler', '~> 1.1.2', require: false
   gem 'capistrano-rails', '~> 1.1.1', require: false
   gem 'capistrano-rvm', github: "capistrano/rvm", require: false
+  gem 'capistrano3-nginx_unicorn', require: false
 end
 
 group :production do

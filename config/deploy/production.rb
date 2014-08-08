@@ -13,9 +13,3 @@ role :web, fetch(:server_ssh)
 role :db,  fetch(:server_ssh), primary: true
 
 server fetch(:server_name), user: fetch(:user), roles: %w{app web}
-~                                                                               
-~                                                                               
-~                                                                               
-~                                                                               
-~                                                                               
-~                                                        

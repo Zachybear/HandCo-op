@@ -1,4 +1,3 @@
-
 lock '3.1.0'
 
 set :application, 'HandCo-op'
@@ -12,11 +11,13 @@ set :linked_dirs, %w{bin log tmp/pids tmp/cache tmp/sockets vendor/bundle public
 #set :rvm_ruby 2.1.2, :deploy
 set :rvm_ruby_version, '2.1.2'
 
+set :log_level, :debug
+
 # SSH forward
 set :pty, true
 
 set :ssh_options, {
-  verbose: :debug,
+  #verbose: :debug,
   keys: %w($HOME/.ssh/id_rsa),
   forward_agent: true,
   auth_methods: %w(publickey password)
@@ -38,10 +39,11 @@ end
 
 
 desc "Get server info"
- task :uname do
+task :uname do
    on roles(:all) do
-     output = capture "sudo uname -a"
-     puts output
-   end
+     #output = capture "sudo uname -a"
+   output = capture 'pwd'  
+   puts output
  end
+end
 
