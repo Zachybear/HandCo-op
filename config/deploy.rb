@@ -1,11 +1,11 @@
 lock '3.1.0'
 
 set :application, 'HandCo-op'
-set :repo_url, 'git@github.com/Zachybear/HandCo-op.git'
+set :repo_url, 'git@github.com:Zachybear/HandCo-op.git'
 
 set :deploy_to, '/home/deploy/HandCo-op'
 
-set :linked_files, %w{config/database.yml}
+set :linked_files, %w{config/database.yml config/secrets.yml}
 set :linked_dirs, %w{bin log tmp/pids tmp/cache tmp/sockets vendor/bundle public/system}
 
 #set :rvm_ruby 2.1.2, :deploy
@@ -42,8 +42,7 @@ desc "Get server info"
 task :uname do
    on roles(:all) do
      #output = capture "sudo uname -a"
-   output = capture 'pwd'  
+   output = capture 'pwd'
    puts output
  end
 end
-
