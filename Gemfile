@@ -7,6 +7,8 @@ group :development, :test do
   gem 'capistrano-rvm', github: "capistrano/rvm", require: false
   gem 'capistrano3-nginx_unicorn', require: false
 
+
+  gem 'rspec-rails'
   gem 'factory_girl_rails'
   gem 'faker'
 end
