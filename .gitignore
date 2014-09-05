@@ -1,2 +1,17 @@
 config/secrets.yml
 config/database.yml
+# bundler state
+/.bundle
+/vendor/bundle/
+/vendor/ruby/
+
+# minimal Rails specific artifacts
+db/*.sqlite3
+/db/*.sqlite3-journal
+/log/*
+/tmp/*
+
+#buffer files
+*~
+
+Gemfile.lock
