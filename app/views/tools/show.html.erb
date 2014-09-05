@@ -5,7 +5,7 @@
   <%= @tool.title %>
 </p>
 
-<p><%= link_to 'I have this tool!', tool_listings_path(skill_id: @tool.id), method: :post %></p>
+<p><%= link_to 'I have this tool!', tool_listings_path(id: @tool.id), method: :post %></p>
 
 <%= link_to 'Edit', edit_tool_path(@tool) %> |
 <%= link_to 'Back', tools_path %>

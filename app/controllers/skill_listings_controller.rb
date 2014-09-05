@@ -4,11 +4,11 @@ class SkillListingsController < ApplicationController
   # POST /skill_listings
   # POST /skill_listings.json
   def create
-    @skill_listing = SkillListing.new(skill_id: params[:skill_id], user_id: current_user.id)
+    @skill_listing = SkillListing.new(skill_id: params[:id], user_id: current_user.id)
 
     respond_to do |format|
       if @skill_listing.save
-        format.html { redirect_to @skill_listing, notice: 'Skill listing was successfully created.' }
+        format.html { redirect_to current_user, notice: 'Skill listing was successfully created.' }
         format.json { render :show, status: :created, location: @skill_listing }
       else
         format.html { render :new }

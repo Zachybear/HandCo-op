@@ -4,11 +4,11 @@ class ToolListingsController < ApplicationController
   # POST /tool_listings
   # POST /tool_listings.json
   def create
-    @tool_listing = ToolListing.new(tool_id: params[:tool_id], user_id: current_user.id)
+    @tool_listing = ToolListing.new(tool_id: params[:id], user_id: current_user.id)
 
     respond_to do |format|
       if @tool_listing.save
-        format.html { redirect_to @tool_listing, notice: 'Tool listing was successfully created.' }
+        format.html { redirect_to current_user, notice: 'Tool listing was successfully created.' }
         format.json { render :show, status: :created, location: @tool_listing }
       else
         format.html { render :new }
