@@ -1,9 +1,18 @@
 Rails.application.routes.draw do
+
   resources :tools
+  resources :tool_listings, only: [:create, :destroy]
 
   resources :skills
+  resources :skill_listings, only: [:create, :destroy]
 
- root 'home#index'
+  resources :users
+
+  resources :sessions, only: [:new, :create, :destroy]
+  match '/login',  to: 'sessions#new',         via: 'get'
+  match '/logout', to: 'sessions#destroy',     via: 'delete'
+
+  root 'home#index'
 
  # match '/search', to: 'pages#search', via: 'get'
 
