@@ -1,4 +1,26 @@
 <p id="notice"><%= notice %></p>
 
+<h1><%= @user.username %></h1>
+
+<h2>Skills</h2>
+<ul>
+  <% @user.skills.each do |skill| %>
+  <li>
+    <%= link_to @user.skill.name, skill_path(@user.skill) %>
+    <%= "Rating: #{rand(1..5)} Stars"%>
+  </li>
+  <% end %>
+</ul>
+
+<h2>Tools</h2>
+<ul>
+  <% @user.tools.each do |skill| %>
+  <li>
+    <%= link_to tool.name, tool_path(tool) %>
+    <%= "Rating: #{rand(1..5)} Stars"%>
+  </li>
+  <% end %>
+</ul>
+
 <%= link_to 'Edit', edit_user_path(@user) %> |
 <%= link_to 'Back', users_path %>

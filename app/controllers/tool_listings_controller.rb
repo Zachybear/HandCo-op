@@ -4,7 +4,7 @@ class ToolListingsController < ApplicationController
   # POST /tool_listings
   # POST /tool_listings.json
   def create
-    @tool_listing = ToolListing.new(tool_listing_params)
+    @tool_listing = ToolListing.new(tool_id: params[:tool_id], user_id: current_user.id)
 
     respond_to do |format|
       if @tool_listing.save

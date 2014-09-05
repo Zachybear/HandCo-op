@@ -5,5 +5,7 @@
   <%= @skill.title %>
 </p>
 
+<p><%= link_to 'I have this skill!', skill_listings_path(skill_id: @skill.id), method: :post %></p>
+
 <%= link_to 'Edit', edit_skill_path(@skill) %> |
 <%= link_to 'Back', skills_path %>

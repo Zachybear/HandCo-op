@@ -4,7 +4,7 @@ class SkillListingsController < ApplicationController
   # POST /skill_listings
   # POST /skill_listings.json
   def create
-    @skill_listing = SkillListing.new(skill_listing_params)
+    @skill_listing = SkillListing.new(skill_id: params[:skill_id], user_id: current_user.id)
 
     respond_to do |format|
       if @skill_listing.save
