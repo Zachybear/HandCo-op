@@ -11,10 +11,17 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140807205811) do
+ActiveRecord::Schema.define(version: 20140905020415) do
 
-  # These are extensions that must be enabled in order to support this database
-  enable_extension "plpgsql"
+  create_table "skill_listings", force: true do |t|
+    t.integer  "user_id"
+    t.integer  "skill_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "skill_listings", ["skill_id"], name: "index_skill_listings_on_skill_id"
+  add_index "skill_listings", ["user_id"], name: "index_skill_listings_on_user_id"
 
   create_table "skills", force: true do |t|
     t.string   "title"
@@ -22,8 +29,25 @@ ActiveRecord::Schema.define(version: 20140807205811) do
     t.datetime "updated_at"
   end
 
+  create_table "tool_listings", force: true do |t|
+    t.integer  "user_id"
+    t.integer  "tool_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "tool_listings", ["tool_id"], name: "index_tool_listings_on_tool_id"
+  add_index "tool_listings", ["user_id"], name: "index_tool_listings_on_user_id"
+
   create_table "tools", force: true do |t|
     t.string   "title"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "users", force: true do |t|
+    t.string   "username"
+    t.string   "email"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
