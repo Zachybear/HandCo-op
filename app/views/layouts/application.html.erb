@@ -5,11 +5,12 @@
 		<meta charset="utf-8" />
   <title>HandCo-Op</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <link rel="stylesheet" type="text/css" href="http://cdnjs.cloudflare.com/ajax/libs/jquery-ui-bootstrap/0.5pre/assets/css/bootstrap.min.css">
-  <!-- <link rel="stylesheet" type="text/css" href="/app/assets/stylesheets/custom.css"> -->
+
+  <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/jquery-ui-bootstrap/0.5pre/assets/css/bootstrap.min.css">
+
 Work In Progress
 
-  
+
 
 
   <%= csrf_meta_tags %>
@@ -27,13 +28,17 @@ Work In Progress
 <body class="background">
 
 <%= yield %>
+<script src="http://code.jquery.com/jquery.js"></script>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.2.0/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/bootstrap-formhelpers/2.3.0/js/bootstrap-formhelpers.min.js"></script>
+
+
 </body>
 
 <style>
 .background
 {
-  background-color: #2EB82E;
+  background-color: #BAC754;
 }
 
 </style>
