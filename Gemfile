@@ -1,5 +1,7 @@
 source 'https://rubygems.org'
 
+gem 'pry'
+
 group :development, :test do
   gem 'capistrano', '~> 3.1.0', require: false
   gem 'capistrano-bundler', '~> 1.1.2', require: false

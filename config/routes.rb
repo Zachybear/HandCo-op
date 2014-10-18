@@ -1,10 +1,14 @@
 Rails.application.routes.draw do
 
+  resources :ratings
+
   resources :tools
   resources :tool_listings, only: [:create, :destroy]
 
   resources :skills
-  resources :skill_listings, only: [:create, :destroy]
+  resources :skill_listings, only: [:create, :destroy] do
+      resources :ratings
+  end
 
   resources :users
 
