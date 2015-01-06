@@ -1,0 +1,51 @@
+.nav-custom{
+  text-align: -webkit-center;
+  font-size: large;
+  padding-left: 460px !important;
+  border-bottom: 0px solid #ddd!important;
+}
+
+.nav-custom-color{
+  color: #EF7902!important;
+}
+
+
+
+.spacer{
+  clear: both;
+  height: 3em;
+}
+
+.btn-custom{
+  width: 200px;
+  height: 35px;
+  margin-top: 10px;
+  color: #050;
+  font: bold 84% 'trebuchet ms',helvetica,sans-serif;
+  background-color: #E0E0E0;
+  border: 1px solid;
+  border-color: #696 #363 #363 #696;
+
+}
+
+.btn-rnd{
+  border-bottom-width: 2px;
+  border-radius: 4px !important;
+}
+
+.hand-head{
+  color: #026E24;
+}
+
+.prov-head{
+  color: #EF7902;
+}
+
+.center{
+  margin-left: 25%;
+  margin-right: 25%;
+}
+
+.label-desc{
+  width: 600px!important;
+}
