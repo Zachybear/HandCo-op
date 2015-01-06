@@ -125,9 +125,7 @@ GEM
     rake (10.4.2)
     rdoc (4.2.0)
       json (~> 1.4)
-<<<<<<< HEAD
     ref (1.0.5)
-=======
     rspec-core (3.0.4)
       rspec-support (~> 3.0.0)
     rspec-expectations (3.0.4)
@@ -144,27 +142,18 @@ GEM
       rspec-mocks (~> 3.0.0)
       rspec-support (~> 3.0.0)
     rspec-support (3.0.4)
->>>>>>> d19ed57e2131c25e4af4c3ea7a64d5783b9b9c5d
     sass (3.2.19)
     sass-rails (4.0.5)
       railties (>= 4.0.0, < 5.0)
       sass (~> 3.2.2)
       sprockets (~> 2.8, < 3.0)
       sprockets-rails (~> 2.0)
-<<<<<<< HEAD
-    sdoc (0.4.1)
-      json (~> 1.7, >= 1.7.7)
-      rdoc (~> 4.0)
-    spring (1.2.0)
-    sprockets (2.12.3)
-=======
     sdoc (0.4.0)
       json (~> 1.8)
       rdoc (~> 4.0, < 5.0)
     slop (3.6.0)
     spring (1.1.3)
     sprockets (2.11.0)
->>>>>>> d19ed57e2131c25e4af4c3ea7a64d5783b9b9c5d
       hike (~> 1.2)
       multi_json (~> 1.0)
       rack (~> 1.0)
