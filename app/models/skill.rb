@@ -1,5 +1,8 @@
 class Skill < ActiveRecord::Base
 
-Skill.order(title: :asc)
+  has_many :skill_listings
+  has_many :users, through: :skill_listings
+
+  Skill.order(title: :asc)
 
 end

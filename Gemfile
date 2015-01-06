@@ -1,16 +1,23 @@
 source 'https://rubygems.org'
 
-group :development do
+gem 'pry'
+
+group :development, :test do
   gem 'capistrano', '~> 3.1.0', require: false
   gem 'capistrano-bundler', '~> 1.1.2', require: false
   gem 'capistrano-rails', '~> 1.1.1', require: false
   gem 'capistrano-rvm', github: "capistrano/rvm", require: false
   gem 'capistrano3-nginx_unicorn', require: false
+
+
+  gem 'rspec-rails'
+  gem 'factory_girl_rails'
+  gem 'faker'
 end
 
 group :production do
  gem 'pg'
-gem 'unicorn'
+ gem 'unicorn'
 end
 
  gem 'colorize'
@@ -43,7 +50,7 @@ gem 'sdoc', '~> 0.4.0',          group: :doc
 gem 'spring',        group: :development
 gem 'less-rails-bootstrap'
 # Use ActiveModel has_secure_password
-# gem 'bcrypt', '~> 3.1.7'
+gem 'bcrypt'
 
 # Use unicorn as the app server
 # gem 'unicorn'

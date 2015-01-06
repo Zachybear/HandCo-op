@@ -1,0 +1,17 @@
+<%= form_for(@skill_listing) do |f| %>
+  <% if @skill_listing.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@skill_listing.errors.count, "error") %> prohibited this skill_listing from being saved:</h2>
+
+      <ul>
+      <% @skill_listing.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

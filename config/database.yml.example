@@ -1,5 +1,5 @@
 development:
-  adapter: postgresql
+  adapter: sqlite3
   host: localhost
   database: handcoop_development
   username: postgres
@@ -10,11 +10,10 @@ test:
   database: something_test
   pool: 5
   timeout: 5000
-
 production:
   adapter: postgresql
   host: localhost
   username: handcodb
-  password: 
+  password:
   pool:     5
   database: handcoop_production
